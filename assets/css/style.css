@@ -870,17 +870,6 @@ footer .wrapper { text-align: center; }
     align-items:     center;
   }
 
-  .hero .pattern-bg {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 200px;
-    background: url(../images/pattern.png);
-    background-size: contain;
-    opacity: 0.2;
-  }
-
   .hero .img-box {
     position: relative;
     z-index: 2;
