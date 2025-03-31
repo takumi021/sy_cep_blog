@@ -450,6 +450,16 @@ header .btn-group {
 .blog-text,
 .profile-wrapper { display: none; }
 
+.blog-text {
+  color: var(--foreground-secondary); /* Ensure text color adapts to theme */
+  font-size: var(--fs-4);
+  line-height: 1.6;
+}
+
+body.dark-theme .blog-text {
+  color: var(--foreground-primary); /* Adjust for dark mode */
+}
+
 .blog .wrapper {
   display:         flex;
   justify-content: space-between;
@@ -1128,4 +1138,23 @@ footer .wrapper { text-align: center; }
 
   .footer-link { margin-bottom: 0.3rem; }
 
+}
+
+
+
+/**
+ * responsive for smaller than 480px screen
+ */
+
+@media (max-width: 480px) {
+  .theme-btn-mobile,
+  .nav-menu-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .blog-text {
+    font-size: var(--fs-5); /* Slightly smaller font for better fit */
+  }
 }
