@@ -576,6 +576,45 @@ footer .wrapper { text-align: center; }
 
 
 /*-----------------------------------*\ 
+  #GRAPHS SECTION
+\*-----------------------------------*/
+
+.graphs-section {
+  background: var(--background-secondary);
+  padding: var(--py) 0;
+  background: var(--background-secondary);
+  color: var(--foreground-secondary); /* Ensure text color adapts to theme */
+  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05); /* Match blog card shadow */
+}
+
+.graphs-section:hover {
+  transform: translateY(-2px); /* Add hover effect similar to blog cards */
+  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.1);
+}
+
+.chart-container {
+  background: var(--background-primary);
+  color: var(--foreground-secondary); /* Ensure text color adapts to theme */
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05); /* Match blog card shadow */
+}
+
+body.dark-theme .graphs-section {
+  background: var(--background-primary);
+  color: var(--foreground-primary); /* Adjust for dark mode */
+}
+
+body.dark-theme .chart-container {
+  background: var(--background-secondary);
+  color: var(--foreground-primary); /* Adjust for dark mode */
+}
+
+
+
+
+/*-----------------------------------*\ 
   #MEDIA QUERIES
 \*-----------------------------------*/
 
@@ -805,6 +844,18 @@ footer .wrapper { text-align: center; }
     .theme-btn-mobile.light .moon {
       display: none; /* Hide the moon icon in light mode */
     }
+
+  /**
+   * GRAPHS SECTION 
+   */
+
+  .graphs-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .chart-container {
+    padding: 0.5rem;
+  }
 
 }
 
